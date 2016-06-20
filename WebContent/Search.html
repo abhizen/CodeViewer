@@ -1,0 +1,50 @@
+<html>
+<head>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="searchApp">
+<!-- <div ng-controller = "GreetingController">
+	{{greeting}}
+</div> -->
+<div class="main" ng-controller="MainController">
+	<div class="row" id="searchForm">
+	<form ng-submit="submit()">
+	<!-- <div class="col-md-1 col-md-offset-1">
+		label>Search</label
+		<input type="submit" id="submit" value="Submit" />
+	</div> -->
+	<div class="col-md-1 col-md-offset-1">
+		<input type="text" ng-change="submit()" ng-model="text" name="searchBox">
+	</div>
+	<!-- </div> -->
+	</form>
+	</div>
+	<div class="row" id="searchResultsSection">
+		<div class="col-md-5 col-md-offset-1" id="searchResultLabel">
+		<label>Search Results</label>
+		<div ng-repeat="product in products">
+			<p class="" ng-click="readfile(product)">{{product}}</p>	
+		</div>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+			<label style="font-size: 150%">Code</label></div>
+			<!--div class="row" ng-repeat="line in lines track by $index" id="resultFile"-->
+			<!--textarea rows="20" cols="100"></textarea-->
+				<!--pre class=""> {{line}}
+					<!--p>
+					
+					</p-->	
+				<!--/pre>
+			</div-->
+			<div id="resultFile">
+			<pre class="">{{lines}}</pre></div>
+		</div>
+	</div>
+</div>
+ <script src="MainController.js"></script>
+</body>
+</html>

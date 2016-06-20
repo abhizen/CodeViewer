@@ -1,0 +1,23 @@
+body {
+    background-color: #0066FF;
+}
+#searchForm{
+	padding-top:30px;
+}
+
+#searchResultsSection{
+	padding-top:20px;	
+}
+
+#searchResultsSection{
+	color: #FFFFFF;
+}
+#resultFile{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+pre {
+     white-space: pre-wrap;
+     font-family:"Comic Sans MS", cursive, sans-serif;
+     font-color: black;
+     /*text-align : left;*/
+  }
